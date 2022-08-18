@@ -1,0 +1,106 @@
+﻿db2 export to CSR_ACCOUNT.ixf of ixf select * from JAY.CSR_ACCOUNT
+db2 export to CSR_ACCOUNT_AUTH.ixf of ixf select * from JAY.CSR_ACCOUNT_AUTH
+db2 export to CSR_AUTH.ixf of ixf select * from JAY.CSR_AUTH
+db2 export to CSR_CASECAR.ixf of ixf select * from JAY.CSR_CASECAR
+db2 export to CSR_CASECAR_SETDATA.ixf of ixf select * from JAY.CSR_CASECAR_SETDATA
+db2 export to CSR_DEPNO.ixf of ixf select * from JAY.CSR_DEPNO
+db2 export to CSR_POTDATA.ixf of ixf select * from JAY.CSR_POTDATA
+db2 export to CSR_POT_DEPNO.ixf of ixf select * from JAY.CSR_POT_DEPNO
+db2 export to CSR_PROCESS.ixf of ixf select * from JAY.CSR_PROCESS
+db2 export to CSR_PROCESS_POT.ixf of ixf select * from JAY.CSR_PROCESS_POT
+db2 export to CSR_SETDATA_3M.ixf of ixf select * from JAY.CSR_SETDATA_3M
+db2 export to CSR_SETDATA_POSITION.ixf of ixf select * from JAY.CSR_SETDATA_POSITION
+db2 export to CSR_SETDATA_SEQ.ixf of ixf select * from JAY.CSR_SETDATA_SEQ
+db2 export to CSR_SETDATA_SEQ_UDI.ixf of ixf select * from JAY.CSR_SETDATA_SEQ_UDI
+db2 export to CSR_SURGICAL.ixf of ixf select * from JAY.CSR_SURGICAL
+db2 export to CSR_SURGICAL_CASECAR.ixf of ixf select * from JAY.CSR_SURGICAL_CASECAR
+db2 export to CSR_UDI.ixf of ixf select * from JAY.CSR_UDI
+db2 export to CSR_UDI_BOX.ixf of ixf select * from JAY.CSR_UDI_BOX
+
+db2 export to CSR_BARCODE.ixf of ixf select * from JAY.CSR_BARCODE
+db2 export to CSR_COSTCENTER.ixf of ixf select * from JAY.CSR_COSTCENTER
+db2 export to CSR_FILE_RESOURCE.ixf of ixf select * from JAY.CSR_FILE_RESOURCE
+db2 export to CSR_HISTORY.ixf of ixf select * from JAY.CSR_HISTORY
+db2 export to CSR_POLTLD.ixf of ixf select * from JAY.CSR_POLTLD
+db2 export to CSR_POLTLD_HISTORY.ixf of ixf select * from JAY.CSR_POLTLD_HISTORY
+db2 export to CSR_PRINTER.ixf of ixf select * from JAY.CSR_PRINTER
+db2 export to CSR_RECEIVEBATCH.ixf of ixf select * from JAY.CSR_RECEIVEBATCH
+db2 export to CSR_REQDETAIL.ixf of ixf select * from JAY.CSR_REQDETAIL
+db2 export to CSR_RECEIVEBATCH_SETDATA.ixf of ixf select * from JAY.CSR_RECEIVEBATCH_SETDATA
+db2 export to CSR_UDI_IMAGE.ixf of ixf select * from JAY.CSR_UDI_IMAGE
+db2 export to CSR_UDI_TYPE.ixf of ixf select * from JAY.CSR_UDI_TYPE
+db2 export to CSR_SETDATA_UDI.ixf of ixf select * from JAY.CSR_SETDATA_UDI
+db2 export to CSR_ROOM.ixf of ixf select * from JAY.CSR_ROOM
+db2 export to CSR_REQUESITION.ixf of ixf select * from JAY.CSR_REQUESITION
+
+
+匯入
+
+db2 import from CSR_ACCOUNT.ixf of ixf modified by identityignore replace_create into ROOT.CSR_ACCOUNT
+db2 import from CSR_ACCOUNT_AUTH.ixf of ixf modified by identityignore replace_create into ROOT.CSR_ACCOUNT_AUTH
+db2 import from CSR_AUTH.ixf of ixf modified by identityignore replace_create into ROOT.CSR_AUTH
+
+db2 import from CSR_CASECAR.ixf of ixf modified by identityignore replace_create into ROOT.CSR_CASECAR
+db2 import from CSR_CASECAR_SETDATA.ixf of ixf modified by identityignore replace_create into ROOT.CSR_CASECAR_SETDATA
+db2 import from CSR_DEPNO.ixf of ixf modified by identityignore replace_create into ROOT.CSR_DEPNO
+db2 import from CSR_POTDATA.ixf of ixf modified by identityignore replace_create into ROOT.CSR_POTDATA
+db2 import from CSR_POT_DEPNO.ixf of ixf modified by identityignore replace_create into ROOT.CSR_POT_DEPNO
+db2 import from CSR_PROCESS.ixf of ixf modified by identityignore replace_create into ROOT.CSR_PROCESS
+db2 import from CSR_PROCESS_POT.ixf of ixf modified by identityignore replace_create into ROOT.CSR_PROCESS_POT
+db2 import from CSR_SETDATA_3M.ixf of ixf modified by identityignore replace_create into ROOT.CSR_SETDATA_3M
+db2 import from CSR_SETDATA_POSITION.ixf of ixf modified by identityignore replace_create into ROOT.CSR_SETDATA_POSITION
+db2 import from CSR_SETDATA_SEQ.ixf of ixf modified by identityignore replace_create into ROOT.CSR_SETDATA_SEQ
+db2 import from CSR_SETDATA_SEQ_UDI.ixf of ixf modified by identityignore replace_create into ROOT.CSR_SETDATA_SEQ_UDI
+db2 import from CSR_SURGICAL.ixf of ixf modified by identityignore replace_create into ROOT.CSR_SURGICAL
+db2 import from CSR_SURGICAL_CASECAR.ixf of ixf modified by identityignore replace_create into ROOT.CSR_SURGICAL_CASECAR
+db2 import from CSR_UDI.ixf of ixf modified by identityignore replace_create into ROOT.CSR_UDI
+db2 import from CSR_UDI_BOX.ixf of ixf modified by identityignore replace_create into ROOT.CSR_UDI_BOX
+
+db2 import from CSR_BARCODE.ixf of ixf modified by identityignore replace_create into ROOT.CSR_BARCODE
+db2 import from CSR_COSTCENTER.ixf of ixf modified by identityignore replace_create into ROOT.CSR_COSTCENTER
+db2 import from CSR_FILE_RESOURCE.ixf of ixf modified by identityignore replace_create into ROOT.CSR_FILE_RESOURCE
+db2 import from CSR_HISTORY.ixf of ixf modified by identityignore replace_create into ROOT.CSR_HISTORY
+db2 import from CSR_POLTLD.ixf of ixf modified by identityignore replace_create into ROOT.CSR_POLTLD
+db2 import from CSR_POLTLD_HISTORY.ixf of ixf modified by identityignore replace_create into ROOT.CSR_POLTLD_HISTORY
+db2 import from CSR_PRINTER.ixf of ixf modified by identityignore replace_create into ROOT.CSR_PRINTER
+db2 import from CSR_RECEIVEBATCH.ixf of ixf modified by identityignore replace_create into ROOT.CSR_RECEIVEBATCH
+db2 import from CSR_REQDETAIL.ixf of ixf modified by identityignore replace_create into ROOT.CSR_REQDETAIL
+db2 import from CSR_RECEIVEBATCH_SETDATA.ixf of ixf modified by identityignore replace_create into ROOT.CSR_RECEIVEBATCH_SETDATA
+db2 import from CSR_UDI_IMAGE.ixf of ixf modified by identityignore replace_create into ROOT.CSR_UDI_IMAGE
+db2 import from CSR_UDI_TYPE.ixf of ixf modified by identityignore replace_create into ROOT.CSR_UDI_TYPE
+db2 import from CSR_SETDATA_UDI.ixf of ixf modified by identityignore replace_create into ROOT.CSR_SETDATA_UDI
+db2 import from CSR_ROOM.ixf of ixf modified by identityignore replace_create into ROOT.CSR_ROOM
+db2 import from CSR_REQUESITION.ixf of ixf modified by identityignore replace_create into ROOT.CSR_REQUESITION
+
+db2 DROP TABLE  ROOT.CSR_ACCOUNT
+db2 DROP TABLE  ROOT.CSR_ACCOUNT_AUTH
+db2 DROP TABLE  ROOT.CSR_AUTH
+db2 DROP TABLE  ROOT.CSR_CASECAR
+db2 DROP TABLE ROOT.CSR_CASECAR_SETDATA
+db2 DROP TABLE  ROOT.CSR_DEPNO
+db2 DROP TABLE ROOT.CSR_POTDATA
+db2 DROP TABLE ROOT.CSR_POT_DEPNO
+db2 DROP TABLE ROOT.CSR_PROCESS
+db2 DROP TABLE  ROOT.CSR_PROCESS_POT
+db2 DROP TABLE  ROOT.CSR_SETDATA_3M
+db2 DROP TABLE ROOT.CSR_SETDATA_POSITION
+db2 DROP TABLE ROOT.CSR_SETDATA_SEQ
+db2 DROP TABLE ROOT.CSR_SETDATA_SEQ_UDI
+db2 DROP TABLE ROOT.CSR_SURGICAL
+db2 DROP TABLE ROOT.CSR_SURGICAL_CASECAR
+db2 DROP TABLE ROOT.CSR_UDI
+db2 DROP TABLE ROOT.CSR_UDI_BOX
+db2 DROP TABLE ROOT.CSR_BARCODE
+db2 DROP TABLE ROOT.CSR_COSTCENTER
+db2 DROP TABLE ROOT.CSR_FILE_RESOURCE
+db2 DROP TABLE ROOT.CSR_HISTORY
+db2 DROP TABLE ROOT.CSR_POLTLD
+db2 DROP TABLE ROOT.CSR_POLTLD_HISTORY
+db2 DROP TABLE ROOT.CSR_PRINTER
+db2 DROP TABLE ROOT.CSR_RECEIVEBATCH
+db2 DROP TABLE ROOT.CSR_REQDETAIL
+db2 DROP TABLE ROOT.CSR_RECEIVEBATCH_SETDATA
+db2 DROP TABLE ROOT.CSR_UDI_IMAGE
+db2 DROP TABLE ROOT.CSR_UDI_TYPE
+db2 DROP TABLE ROOT.CSR_ROOM
+
